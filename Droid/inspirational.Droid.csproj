@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A3645F2-4455-4FD3-A869-8B083A9569D8}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>inspirational.Droid</RootNamespace>
+    <AssemblyName>inspirational.Droid</AssemblyName>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\inspirational\inspirational.csproj">
+      <Project>{DE05E828-5B72-460C-B780-FDF414886A91}</Project>
+      <Name>inspirational</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage1.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage2.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage3.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage4.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage5.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage6.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage7.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage8.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage9.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage10.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage11.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage12.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage13.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage14.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage15.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage16.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage17.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage18.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage19.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage20.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage21.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage22.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage23.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage24.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage25.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage26.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage27.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage28.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage29.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage30.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage31.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage32.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage33.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage34.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage35.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage36.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage37.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage38.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage39.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage40.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage41.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage42.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage43.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage44.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage45.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage46.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage47.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage48.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage49.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage50.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage51.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage52.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage53.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage54.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage55.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage56.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage57.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage58.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage59.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage60.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage61.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage62.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage63.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage64.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage65.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage66.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage67.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage68.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage69.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage70.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage71.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage72.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage73.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage74.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage75.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage76.jpg" />
+    <AndroidResource Include="Resources\Drawable\inspirationalmessageimage77.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader1.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader2.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader3.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader4.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader5.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader6.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader7.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader8.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader9.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader10.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader11.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader12.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader13.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader14.jpg" />
+    <AndroidResource Include="Resources\Drawable\leader15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Drawable\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>

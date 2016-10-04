@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="26" y="295" width="331" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17" weight="black"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="43" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="309" y="617" width="46" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonNext_TouchUpInside:" destination="BYZ-38-t0r" id="49" eventType="touchUpInside"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="58" firstAttribute="width" constant="46"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="44" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="8" y="617" width="46" height="30"/>
+                                <state key="normal" title="Prev">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonPrev_TouchUpInside:" destination="BYZ-38-t0r" id="50" eventType="touchUpInside"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="55" firstAttribute="width" constant="46"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="62" translatesAutoresizingMaskIntoConstraints="NO" text="Author" fixedFrame="YES">
+                                <rect key="frame" x="20" y="470" width="335" height="20"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="64" translatesAutoresizingMaskIntoConstraints="NO" buttonType="roundedRect" fixedFrame="YES">
+                                <rect key="frame" x="24" y="498" width="335" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonLink_TouchUpInside:" destination="BYZ-38-t0r" id="94" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="65" translatesAutoresizingMaskIntoConstraints="NO" image="inspirationalmessageimage28.jpg" fixedFrame="YES">
+                                <rect key="frame" x="20" y="33" width="342" height="234"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="70" translatesAutoresizingMaskIntoConstraints="NO" editable="NO" selectable="NO" fixedFrame="YES">
+                                <rect key="frame" x="24" y="323" width="335" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="53" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="44" secondAttribute="bottom" constant="20"/>
+                            <constraint id="54" firstItem="44" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8"/>
+                            <constraint id="56" firstItem="8bC-Xf-vdC" firstAttribute="bottom" secondItem="43" secondAttribute="bottom" constant="20"/>
+                            <constraint id="57" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="43" secondAttribute="trailing" constant="20"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="title" destination="3" id="name-outlet-3"/>
+                        <outlet property="ButtonNext" destination="43" id="name-outlet-43"/>
+                        <outlet property="ButtonPrev" destination="44" id="name-outlet-44"/>
+                        <outlet property="author" destination="62" id="name-outlet-62"/>
+                        <outlet property="image" destination="65" id="name-outlet-65"/>
+                        <outlet property="buttonLink" destination="64" id="name-outlet-64"/>
+                        <outlet property="quote" destination="70" id="name-outlet-70"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina47"/>
+    </simulatedMetricsContainer>
+    <resources>
+        <image name="inspirationalmessageimage9.jpg" width="1250" height="1625"/>
+        <image name="inspirationalmessageimage10.jpg" width="1250" height="1623"/>
+        <image name="inspirationalmessageimage11.jpg" width="1250" height="1623"/>
+        <image name="inspirationalmessageimage12.jpg" width="1250" height="1624"/>
+        <image name="inspirationalmessageimage13.jpg" width="740" height="1024"/>
+        <image name="inspirationalmessageimage14.jpg" width="1250" height="1711"/>
+        <image name="inspirationalmessageimage15.jpg" width="1250" height="1625"/>
+        <image name="inspirationalmessageimage16.jpg" width="1250" height="1612"/>
+        <image name="inspirationalmessageimage17.jpg" width="1250" height="1624"/>
+        <image name="inspirationalmessageimage18.jpg" width="1250" height="1639"/>
+        <image name="inspirationalmessageimage19.jpg" width="530" height="768"/>
+        <image name="inspirationalmessageimage20.jpg" width="539" height="768"/>
+        <image name="inspirationalmessageimage21.jpg" width="1250" height="1604"/>
+        <image name="inspirationalmessageimage22.jpg" width="569" height="768"/>
+        <image name="inspirationalmessageimage23.jpg" width="1250" height="1583"/>
+        <image name="inspirationalmessageimage24.jpg" width="579" height="768"/>
+        <image name="inspirationalmessageimage25.jpg" width="542" height="768"/>
+        <image name="inspirationalmessageimage26.jpg" width="594" height="768"/>
+        <image name="inspirationalmessageimage27.jpg" width="548" height="768"/>
+        <image name="inspirationalmessageimage28.jpg" width="542" height="768"/>
+        <image name="inspirationalmessageimage29.jpg" width="611" height="768"/>
+        <image name="inspirationalmessageimage30.jpg" width="533" height="768"/>
+        <image name="inspirationalmessageimage31.jpg" width="511" height="768"/>
+        <image name="inspirationalmessageimage32.jpg" width="543" height="768"/>
+        <image name="inspirationalmessageimage33.jpg" width="577" height="768"/>
+        <image name="inspirationalmessageimage34.jpg" width="627" height="768"/>
+        <image name="inspirationalmessageimage35.jpg" width="583" height="768"/>
+        <image name="inspirationalmessageimage36.jpg" width="619" height="768"/>
+        <image name="inspirationalmessageimage37.jpg" width="785" height="768"/>
+        <image name="inspirationalmessageimage38.jpg" width="1024" height="681"/>
+        <image name="inspirationalmessageimage39.jpg" width="1024" height="684"/>
+        <image name="inspirationalmessageimage40.jpg" width="800" height="600"/>
+        <image name="inspirationalmessageimage41.jpg" width="1024" height="682"/>
+        <image name="inspirationalmessageimage42.jpg" width="1024" height="731"/>
+        <image name="inspirationalmessageimage43.jpg" width="1024" height="724"/>
+        <image name="inspirationalmessageimage44.jpg" width="996" height="768"/>
+        <image name="inspirationalmessageimage45.jpg" width="1024" height="728"/>
+        <image name="inspirationalmessageimage46.jpg" width="1024" height="755"/>
+        <image name="inspirationalmessageimage47.jpg" width="980" height="768"/>
+        <image name="inspirationalmessageimage48.jpg" width="1024" height="682"/>
+        <image name="inspirationalmessageimage49.jpg" width="1024" height="665"/>
+        <image name="inspirationalmessageimage50.jpg" width="1024" height="684"/>
+        <image name="inspirationalmessageimage51.jpg" width="1024" height="682"/>
+        <image name="inspirationalmessageimage52.jpg" width="1024" height="697"/>
+        <image name="inspirationalmessageimage53.jpg" width="1022" height="768"/>
+        <image name="inspirationalmessageimage54.jpg" width="1024" height="682"/>
+        <image name="inspirationalmessageimage55.jpg" width="1024" height="700"/>
+        <image name="inspirationalmessageimage56.jpg" width="1024" height="680"/>
+        <image name="inspirationalmessageimage57.jpg" width="1024" height="669"/>
+        <image name="inspirationalmessageimage58.jpg" width="1024" height="682"/>
+        <image name="inspirationalmessageimage59.jpg" width="1024" height="679"/>
+        <image name="inspirationalmessageimage60.jpg" width="752" height="768"/>
+        <image name="inspirationalmessageimage61.jpg" width="1024" height="718"/>
+        <image name="inspirationalmessageimage62.jpg" width="1024" height="737"/>
+        <image name="inspirationalmessageimage63.jpg" width="1024" height="682"/>
+        <image name="inspirationalmessageimage64.jpg" width="1024" height="768"/>
+        <image name="inspirationalmessageimage65.jpg" width="1024" height="664"/>
+        <image name="inspirationalmessageimage66.jpg" width="1024" height="685"/>
+        <image name="inspirationalmessageimage67.jpg" width="1024" height="681"/>
+        <image name="inspirationalmessageimage68.jpg" width="1024" height="682"/>
+        <image name="inspirationalmessageimage69.jpg" width="1024" height="682"/>
+        <image name="inspirationalmessageimage70.jpg" width="768" height="583"/>
+        <image name="inspirationalmessageimage71.jpg" width="1024" height="768"/>
+        <image name="inspirationalmessageimage72.jpg" width="707" height="768"/>
+        <image name="inspirationalmessageimage73.jpg" width="1024" height="682"/>
+        <image name="inspirationalmessageimage74.jpg" width="1022" height="768"/>
+        <image name="inspirationalmessageimage75.jpg" width="1024" height="686"/>
+        <image name="inspirationalmessageimage76.jpg" width="856" height="768"/>
+        <image name="inspirationalmessageimage77.jpg" width="996" height="768"/>
+        <image name="Images/inspirationalmessageimage1.jpg" width="1250" height="1625"/>
+        <image name="Images/inspirationalmessageimage10.jpg" width="1250" height="1623"/>
+        <image name="Images/inspirationalmessageimage11.jpg" width="1250" height="1623"/>
+        <image name="Images/inspirationalmessageimage12.jpg" width="1250" height="1624"/>
+        <image name="Images/inspirationalmessageimage13.jpg" width="740" height="1024"/>
+        <image name="Images/inspirationalmessageimage14.jpg" width="1250" height="1711"/>
+        <image name="Images/inspirationalmessageimage15.jpg" width="1250" height="1625"/>
+        <image name="Images/inspirationalmessageimage16.jpg" width="1250" height="1612"/>
+        <image name="Images/inspirationalmessageimage17.jpg" width="1250" height="1624"/>
+        <image name="Images/inspirationalmessageimage18.jpg" width="1250" height="1639"/>
+        <image name="Images/inspirationalmessageimage19.jpg" width="530" height="768"/>
+        <image name="Images/inspirationalmessageimage2.jpg" width="1250" height="1625"/>
+        <image name="Images/inspirationalmessageimage20.jpg" width="539" height="768"/>
+        <image name="Images/inspirationalmessageimage21.jpg" width="1250" height="1604"/>
+        <image name="Images/inspirationalmessageimage22.jpg" width="569" height="768"/>
+        <image name="Images/inspirationalmessageimage23.jpg" width="1250" height="1583"/>
+        <image name="Images/inspirationalmessageimage24.jpg" width="579" height="768"/>
+        <image name="Images/inspirationalmessageimage25.jpg" width="542" height="768"/>
+        <image name="Images/inspirationalmessageimage26.jpg" width="594" height="768"/>
+        <image name="Images/inspirationalmessageimage27.jpg" width="548" height="768"/>
+        <image name="Images/inspirationalmessageimage28.jpg" width="542" height="768"/>
+        <image name="Images/inspirationalmessageimage29.jpg" width="611" height="768"/>
+        <image name="Images/inspirationalmessageimage3.jpg" width="1250" height="1625"/>
+        <image name="Images/inspirationalmessageimage30.jpg" width="533" height="768"/>
+        <image name="Images/inspirationalmessageimage31.jpg" width="511" height="768"/>
+        <image name="Images/inspirationalmessageimage32.jpg" width="543" height="768"/>
+        <image name="Images/inspirationalmessageimage33.jpg" width="577" height="768"/>
+        <image name="Images/inspirationalmessageimage34.jpg" width="627" height="768"/>
+        <image name="Images/inspirationalmessageimage35.jpg" width="583" height="768"/>
+        <image name="Images/inspirationalmessageimage36.jpg" width="619" height="768"/>
+        <image name="Images/inspirationalmessageimage37.jpg" width="785" height="768"/>
+        <image name="Images/inspirationalmessageimage38.jpg" width="1024" height="681"/>
+        <image name="Images/inspirationalmessageimage39.jpg" width="1024" height="684"/>
+        <image name="Images/inspirationalmessageimage4.jpg" width="710" height="1024"/>
+        <image name="Images/inspirationalmessageimage40.jpg" width="800" height="600"/>
+        <image name="Images/inspirationalmessageimage41.jpg" width="1024" height="682"/>
+        <image name="Images/inspirationalmessageimage42.jpg" width="1024" height="731"/>
+        <image name="Images/inspirationalmessageimage43.jpg" width="1024" height="724"/>
+        <image name="Images/inspirationalmessageimage44.jpg" width="996" height="768"/>
+        <image name="Images/inspirationalmessageimage45.jpg" width="1024" height="728"/>
+        <image name="Images/inspirationalmessageimage46.jpg" width="1024" height="755"/>
+        <image name="Images/inspirationalmessageimage47.jpg" width="980" height="768"/>
+        <image name="Images/inspirationalmessageimage48.jpg" width="1024" height="682"/>
+        <image name="Images/inspirationalmessageimage49.jpg" width="1024" height="665"/>
+        <image name="Images/inspirationalmessageimage5.jpg" width="1250" height="1625"/>
+        <image name="Images/inspirationalmessageimage50.jpg" width="1024" height="684"/>
+        <image name="Images/inspirationalmessageimage51.jpg" width="1024" height="682"/>
+        <image name="Images/inspirationalmessageimage52.jpg" width="1024" height="697"/>
+        <image name="Images/inspirationalmessageimage53.jpg" width="1022" height="768"/>
+        <image name="Images/inspirationalmessageimage54.jpg" width="1024" height="682"/>
+        <image name="Images/inspirationalmessageimage55.jpg" width="1024" height="700"/>
+        <image name="Images/inspirationalmessageimage56.jpg" width="1024" height="680"/>
+        <image name="Images/inspirationalmessageimage57.jpg" width="1024" height="669"/>
+        <image name="Images/inspirationalmessageimage58.jpg" width="1024" height="682"/>
+        <image name="Images/inspirationalmessageimage59.jpg" width="1024" height="679"/>
+        <image name="Images/inspirationalmessageimage6.jpg" width="562" height="768"/>
+        <image name="Images/inspirationalmessageimage60.jpg" width="752" height="768"/>
+        <image name="Images/inspirationalmessageimage61.jpg" width="1024" height="718"/>
+        <image name="Images/inspirationalmessageimage62.jpg" width="1024" height="737"/>
+        <image name="Images/inspirationalmessageimage63.jpg" width="1024" height="682"/>
+        <image name="Images/inspirationalmessageimage64.jpg" width="1024" height="768"/>
+        <image name="Images/inspirationalmessageimage65.jpg" width="1024" height="664"/>
+        <image name="Images/inspirationalmessageimage66.jpg" width="1024" height="685"/>
+        <image name="Images/inspirationalmessageimage67.jpg" width="1024" height="681"/>
+        <image name="Images/inspirationalmessageimage68.jpg" width="1024" height="682"/>
+        <image name="Images/inspirationalmessageimage69.jpg" width="1024" height="682"/>
+        <image name="Images/inspirationalmessageimage7.jpg" width="1250" height="1623"/>
+        <image name="Images/inspirationalmessageimage70.jpg" width="768" height="583"/>
+        <image name="Images/inspirationalmessageimage71.jpg" width="1024" height="768"/>
+        <image name="Images/inspirationalmessageimage72.jpg" width="707" height="768"/>
+        <image name="Images/inspirationalmessageimage73.jpg" width="1024" height="682"/>
+        <image name="Images/inspirationalmessageimage74.jpg" width="1022" height="768"/>
+        <image name="Images/inspirationalmessageimage75.jpg" width="1024" height="686"/>
+        <image name="Images/inspirationalmessageimage76.jpg" width="856" height="768"/>
+        <image name="Images/inspirationalmessageimage77.jpg" width="996" height="768"/>
+        <image name="Images/inspirationalmessageimage8.jpg" width="1250" height="1634"/>
+        <image name="Images/inspirationalmessageimage9.jpg" width="1250" height="1625"/>
+        <image name="Images/leader1.jpg" width="614" height="768"/>
+        <image name="Images/leader2.jpg" width="614" height="768"/>
+        <image name="Images/leader3.jpg" width="614" height="768"/>
+        <image name="Images/leader4.jpg" width="606" height="768"/>
+        <image name="Images/leader5.jpg" width="614" height="768"/>
+        <image name="Images/leader6.jpg" width="614" height="768"/>
+        <image name="Images/leader7.jpg" width="614" height="768"/>
+        <image name="Images/leader8.jpg" width="549" height="768"/>
+        <image name="Images/leader9.jpg" width="614" height="768"/>
+        <image name="Images/leader10.jpg" width="614" height="768"/>
+        <image name="Images/leader11.jpg" width="614" height="768"/>
+        <image name="Images/leader12.jpg" width="614" height="768"/>
+        <image name="Images/leader13.jpg" width="614" height="768"/>
+        <image name="Images/leader14.jpg" width="614" height="768"/>
+        <image name="Images/leader15.jpg" width="614" height="768"/>
+    </resources>
+</document>

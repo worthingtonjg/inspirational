@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{2024453B-DFA6-4C6E-BAF8-B44EEB8D7686}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>inspirational.iOS</RootNamespace>
+    <AssemblyName>inspirational.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\inspirational\inspirational.csproj">
+      <Project>{DE05E828-5B72-460C-B780-FDF414886A91}</Project>
+      <Name>inspirational</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingOverlay.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Images\inspirationalmessageimage1.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage10.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage11.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage12.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage13.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage14.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage15.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage16.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage17.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage18.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage19.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage2.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage20.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage21.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage22.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage23.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage24.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage25.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage26.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage27.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage28.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage29.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage3.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage30.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage31.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage32.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage33.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage34.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage35.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage36.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage37.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage38.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage39.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage4.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage40.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage41.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage42.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage43.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage44.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage45.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage46.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage47.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage48.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage49.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage5.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage50.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage51.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage52.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage53.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage54.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage55.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage56.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage57.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage58.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage59.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage6.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage60.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage61.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage62.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage63.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage64.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage65.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage66.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage67.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage68.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage69.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage7.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage70.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage71.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage72.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage73.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage74.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage75.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage76.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage77.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage8.jpg" />
+    <BundleResource Include="Resources\Images\inspirationalmessageimage9.jpg" />
+    <BundleResource Include="Resources\Images\leader1.jpg" />
+    <BundleResource Include="Resources\Images\leader2.jpg" />
+    <BundleResource Include="Resources\Images\leader3.jpg" />
+    <BundleResource Include="Resources\Images\leader4.jpg" />
+    <BundleResource Include="Resources\Images\leader5.jpg" />
+    <BundleResource Include="Resources\Images\leader6.jpg" />
+    <BundleResource Include="Resources\Images\leader7.jpg" />
+    <BundleResource Include="Resources\Images\leader8.jpg" />
+    <BundleResource Include="Resources\Images\leader9.jpg" />
+    <BundleResource Include="Resources\Images\leader10.jpg" />
+    <BundleResource Include="Resources\Images\leader11.jpg" />
+    <BundleResource Include="Resources\Images\leader12.jpg" />
+    <BundleResource Include="Resources\Images\leader13.jpg" />
+    <BundleResource Include="Resources\Images\leader14.jpg" />
+    <BundleResource Include="Resources\Images\leader15.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
